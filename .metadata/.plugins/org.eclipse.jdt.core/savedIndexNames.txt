@@ -1,6 +1,5 @@
 INDEX VERSION 1.131+C:\SSAFY\Algorithm\.metadata\.plugins\org.eclipse.jdt.core
 2804485155.index
-867096231.index
 2792254283.index
 2915038773.index
 462423112.index
