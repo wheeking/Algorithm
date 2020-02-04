@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class SWEA1220_Magnetic {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int len = 100;
+		
+		for (int tc = 1; tc <= 10; tc++) {
+			int ans = 0;
+			int[][] map = new int[len][len];
+			sc.nextInt();
+			
+			// 입력. 1:N,  2:S  위:N 아래:S
+			for (int i = 0; i < len; i++) {
+				for (int j = 0; j < len; j++) {
+					map[i][j] = sc.nextInt();
+				}
+			}
+			int flag = 0;	// N 찾았을 때 플래그 1
+			for (int j = 0; j < len; j++) {
+				for (int i = 0; i < len; i++) {
+					if (flag == 1 && map[i][j] == 2) {
+						ans++;
+						flag = 0;
+					}
+					
+					if(map[i][j] == 1) {
+						flag = 1;
+					}
+				}
+			}
+			
+			System.out.println("#" + tc + " " + ans);
+		}
+	}
+}
