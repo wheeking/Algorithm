@@ -2,43 +2,184 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f8ab9c1-ee98-4c10-abd5-b52189fac8ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE1204.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE1206.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE1210.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE1289.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE2063.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE3307.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE5215.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE5601.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE6730.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE7728.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE8658.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE8673.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE8821.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE8998.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWE9317.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA1215_회문1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA1220_Magnetic.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA1225_암호생성기.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA1228_암호문1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA1229_암호문2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA1230_암호문3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA1288_양세기.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA1945_소인수분해.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA1959_두개의숫자열.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA2007_패턴마디.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA2369_Theater.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA4013_모의테스트_특이한자석.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA5549.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA6913_프로그래밍대회.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/SWEA7102_준홍이카드.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/baekjoon/B1260_DFS_BFS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/baekjoon/B1436_영화감독숌.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/10/900bfb6bec47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/17/f0fd433fd847001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1f/8019eb60be47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2/40463eccfe47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2/60aa6009ee47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/21/e046d22df047001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/23/009166e70048001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/25/a0cce2fabd47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2a/e0c5768ad447001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2e/10c5f760fd47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3/50d253d20048001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/30/20cf3bb9ec47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/31/a055405ded47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/36/8000fd27e047001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/37/b004aaa8ec47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3a/a070ced2ec47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4a/f0efd4d0ff47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4b/50dc5218f347001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4c/50f3d099d747001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4e/30194006dd47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4e/907cbcd5af47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/52/f05aa22ab447001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/53/904792bcb447001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/56/10fd1fa80048001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/59/b0c9d2abf147001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5b/d0211a2ded47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5c/505b95fbdf47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5d/d01765f4da47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/60/002ba1e00048001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/60/c0c8970bb947001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/63/50fc3bccfe47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/64/d037afbfdc47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/66/e0d79e99b847001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/67/909104b6ef47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/72/50bef068d747001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/73/b0a076aec947001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/77/e0f3b204b947001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7b/6085ad77fd47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7d/0022ffa1e047001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7d/906a9212f047001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7d/b0395791ef47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7f/b035d2cfee47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8/009bd6a7df47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/81/5045a32ab447001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/84/b0b66795e047001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/87/50909089ef47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/87/c06f1a3def47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8a/0046f348ef47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8a/307f7e01ed47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8a/90d29e09f347001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8b/40b772d7df47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8c/2097b969d847001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8c/c061010aef47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8d/0094acb1ed47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/91/50ad6615fd47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/92/b07ab938af47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/94/20a123b2df47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/96/4108d56dd747001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9a/40d70d93d747001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a/909b6fc8bd47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a7/0053d6baf147001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a8/b06945d0c947001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a9/20d288ceb447001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ad/308f801ced47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b4/1093b82ff047001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ba/408354c7ec47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/bd/4008d56dd747001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c/a073407c0048001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c4/802d584bee47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c4/f0c5be0ef347001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c9/90403ecbec47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ca/30e69796c847001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d4/e0187c12ef47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d8/c0b003980048001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d9/d0319687ed47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/da/505cec83f047001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/da/c08c608ee047001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/de/50c939a33a47001a1905f4bd6bac2446" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/de/a0ea78aec947001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e0/20186f84b447001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e1/405e99b4ee47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e2/802d480ddd47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e4/70bf1f15e047001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e9/40f76815fd47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/eb/20ba2932f047001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/eb/a0baf73cf147001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f1/70231bc6ed47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f4/f0f5bad5af47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f6/201d23b5ed47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f6/90170a000148001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f8/b01ba0d3f047001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fd/00c911debd47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fd/b0d1c20e0048001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fe/b0ee3fd60248001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ff/007dc7f1ef47001a17ade4db9ccdfccc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/algorithm/.markers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/1.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.java.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/B2606_바이러스.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/B2667_단지번호.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Calculator.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/SWEA1219_길찾기.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/SWEA1222_계산기1.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/SWEA1223_계산기2.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/SWEA1226_미로1.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.ui.refactoring/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.tips.ide/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.ui/OpenTypeHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.recommenders/caches/identified-project-coordinates.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.recommenders/caches/manual-mappings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Calculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Pair.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/SWEA1219_길찾기.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/SWEA1222_계산기1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/SWEA1223_계산기2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/SWEA1226_미로1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/baekjoon/B2606_바이러스.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/baekjoon/B2667_단지번호.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/baekjoon/Pair.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SWEA1219_길찾기.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SWEA1222_계산기1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SWEA1223_계산기2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SWEA1226_미로1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/B2606_바이러스.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/B2667_단지번호.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/algorithm/.indexes/e4/77/history.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/algorithm/.indexes/e4/77/history.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/algorithm/.indexes/e4/history.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/algorithm/.indexes/e4/history.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/algorithm/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/algorithm/.markers.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/algorithm/.syncinfo.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/algorithm/.syncinfo.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/0.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.jsp.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.jsp.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/867096231.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/867096231.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/algorithm/2020/2/6/refactorings.history" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/algorithm/2020/2/6/refactorings.history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/algorithm/2020/2/6/refactorings.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/algorithm/2020/2/6/refactorings.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/baekjoon/B1260_DFS_BFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/baekjoon/B1260_DFS_BFS.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/baekjoon/B1260_DFS_BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/B1260_DFS_BFS.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,18 +190,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/baekjoon/B1260_DFS_BFS.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SWEA1226_미로1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="78" column="35" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
+            <state relative-caret-position="67">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SWEA1209_Sum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding>
-                <element signature="e#825#834#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SWEA8382.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SWEA1486_장훈이선반.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,29 +238,35 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/SWEA1219_길찾기.java" />
         <option value="$PROJECT_DIR$/src/baekjoon/B1260_DFS_BFS.java" />
+        <option value="$PROJECT_DIR$/src/SWEA1209_Sum.java" />
+        <option value="$PROJECT_DIR$/src/SWEA8382.java" />
+        <option value="$PROJECT_DIR$/src/SWEA1486_장훈이선반.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="904" />
     <option name="height" value="1027" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -108,12 +284,6 @@
               <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="baekjoon" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -144,7 +314,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SWEA1486_장훈이선반">
     <configuration name="B1260_DFS_BFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.B1260_DFS_BFS" />
       <module name="algorithm" />
@@ -158,8 +328,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SWEA1209_Sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SWEA1209_Sum" />
+      <module name="algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SWEA1486_장훈이선반" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SWEA1486_장훈이선반" />
+      <module name="algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SWEA8382" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SWEA8382" />
+      <module name="algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SWEA1486_장훈이선반" />
+        <item itemvalue="Application.SWEA8382" />
+        <item itemvalue="Application.SWEA1209_Sum" />
         <item itemvalue="Application.B1260_DFS_BFS" />
       </list>
     </recent_temporary>
@@ -175,56 +369,96 @@
       <option name="presentableId" value="Default" />
       <updated>1580822854092</updated>
       <workItem from="1580822857473" duration="6592000" />
+      <workItem from="1580907785517" duration="4059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6592000" />
+    <option name="totallyTimeSpent" value="10651000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="904" height="1027" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.225058" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16544567" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/SWEA1219_길찾기.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/baekjoon/B1260_DFS_BFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="78" column="35" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
+        <state relative-caret-position="558">
+          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SWEA1226_미로1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SWEA1209_Sum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
           <folding>
-            <element signature="e#825#834#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SWEA8382.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SWEA1486_장훈이선반.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
