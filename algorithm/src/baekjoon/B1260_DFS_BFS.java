@@ -57,7 +57,7 @@ public class B1260_DFS_BFS {
 	
 	public static void dfs(int[][] map, int v) {
 		int[] visited = new int[map.length];
-		int[] stack = new int[map.length +20];
+		int[] stack = new int[10000];
 		int top = -1;	// 스택 생성
 		
 		stack[++top] = v;	// 시작 정점 스택에 삽입
@@ -66,8 +66,10 @@ public class B1260_DFS_BFS {
 		while (top > -1) { // 스택이 비워질 때까지
 			int w = -1;	// v 정점에 인접한 정점
 			// 인접한 정점 중 미방문 정점 착기
-			for (int i = 0; i < map.length; i++) {
+			for (int i = 0; i < map[v].length; i++) {
 				if (map[v][i] == 1 && visited[i] == 0) {
+					// v도 스택에 넣어줘야함.
+					stack[++top] = v;
 					w = i; // 다음 갈 정점을 저장
 					stack[++top] = w;	// 스택에 넣기
 					visited[w] = 1;	// 방문 체크
