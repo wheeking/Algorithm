@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class SWEA1256_K번째접미어 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int TC = sc.nextInt();
+		
+		for (int i = 1; i <= TC; i++) {
+			int k = sc.nextInt();
+			String str = sc.next();
+			ArrayList<String> ansArr = new ArrayList<String>();
+			
+			ArrayList<Character> list = new ArrayList<Character>();
+			
+			for (int j = 0; j < str.length(); j++) {
+				list.add(str.charAt(j));
+			}
+			
+			
+			for (int j = 0; j < list.size(); j++) {
+				char[] ch = new char[list.size()];
+				ch[j] = list.get(j);
+				String temp = String.valueOf(ch);
+				
+				ansArr.add(temp);
+				list.remove(0);
+			}
+			
+			
+			
+			System.out.println(ansArr.get(1));
+			
+			
+			
+		}
+	}
+}

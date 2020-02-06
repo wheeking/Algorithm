@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class SWEA8774_피보나치 {
+	public static int sum = 0;
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int TC = sc.nextInt();
+		
+		for (int test_case = 1; test_case <= TC; test_case++) {
+			int n = sc.nextInt();
+			
+			sum = 0;
+			int ans = fibonacci(n);
+			
+			System.out.println("#" + test_case + " " + ans);
+		}
+	}
+	
+	public static int fibonacci(int n) {
+		if (n == 1)
+			return sum;
+		
+		sum = fibonacci(n-1);
+		return sum;
+	}
+}
