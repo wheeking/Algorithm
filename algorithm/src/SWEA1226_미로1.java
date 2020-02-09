@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-class Pair {
+class Pair3 {
 	int x, y;
 	
-	Pair(int x, int y) {
+	Pair3(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -22,15 +22,15 @@ public class SWEA1226_미로1 {
 			ans = 0;
 			visited = new int[16][16];
 			sc.nextInt();
-			Pair start = new Pair(0, 0);
-			Pair end = new Pair(0, 0);
+			Pair3 start = new Pair3(0, 0);
+			Pair3 end = new Pair3(0, 0);
 			// 입력
 			for (int i = 0; i < 16; i++) {
 				String temp = sc.next();
 				for (int j = 0; j < 16; j++) {
 					map[i][j] = temp.charAt(j) - '0';
 					if (map[i][j] == 2) {
-						start = new Pair(i, j);
+						start = new Pair3(i, j);
 					}
 				}
 			}
@@ -40,7 +40,7 @@ public class SWEA1226_미로1 {
 		}
 	} // end of main
 	
-	public static void dfs(Pair start) {
+	public static void dfs(Pair3 start) {
 		visited[start.x][start.y] = 1; 
 		// 길 있으면 1 없으면 0
 		if (map[start.x][start.y] == 3) {
@@ -53,7 +53,7 @@ public class SWEA1226_미로1 {
 			if (newX >= 0 && newY >= 0 && newX < 16 && newY < 16) {
 				if (visited[newX][newY] == 0 && map[newX][newY] != 1) {
 					visited[newX][newY] = 1;
-					Pair newP = new Pair(newX, newY);
+					Pair3 newP = new Pair3(newX, newY);
 					dfs(newP);
 				}
 			}
