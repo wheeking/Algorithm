@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.*;
 
 public class SWEA1238_Contact {
@@ -91,3 +92,16 @@ class qInfo {
         this.depth = depth;
     }
 }
+=======
+import java.util.Scanner;
+
+public class SWEA1238_Contact {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		for (int test_case = 1; test_case <= 10; test_case++) {
+			
+		}
+	}
+}
+>>>>>>> 65401a7c3ed0f79100ccfc832b40854b91a66494

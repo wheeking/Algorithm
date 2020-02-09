@@ -1,0 +1,24 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Solution {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] daysArr = {0, 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+		int T = sc.nextInt();
+		
+		for (int test_case = 1; test_case <= T; test_case++) {
+			int m1 = sc.nextInt();
+			int d1 = sc.nextInt();
+			int m2 = sc.nextInt();
+			int d2 = sc.nextInt();
+			
+			int days1 = daysArr[m1] + d1;
+			int days2 = daysArr[m2] + d2;
+			
+			int ans = 0;
+			ans = days2 - days1;	
+			System.out.println("#" + test_case + " " + ans);
+		}
+	}
+}
