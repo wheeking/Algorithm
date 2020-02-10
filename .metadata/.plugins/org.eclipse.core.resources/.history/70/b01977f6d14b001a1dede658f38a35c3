@@ -1,0 +1,32 @@
+package baekjoon;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class SWEA1233_사칙연산유효성 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		for (int test_case = 1; test_case <= 10; test_case++) {
+			int N = sc.nextInt();
+			int ans = 0;
+			int flag = 1;
+			
+			for (int i = 0; i < N; i++) {
+				sc.nextLine();
+				String temp = sc.nextLine();
+				char[] chTemp = temp.toCharArray();
+				if (chTemp.length > 3 && chTemp[3] - '0' >= 0 && chTemp[3] - '0'< 10) {
+					ans = 0;
+					flag = 1;
+				}
+				else
+					ans = 1;
+			}
+			
+			
+			
+			System.out.println("#" + test_case + " " + flag);
+		}
+	}
+}
