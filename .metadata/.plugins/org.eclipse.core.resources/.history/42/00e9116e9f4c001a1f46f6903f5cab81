@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class Solution {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		
+		for (int test_case = 1; test_case <= T; test_case++) {
+			int N = sc.nextInt();
+			int K = sc.nextInt();
+			int[][] arr = new int[N+1][N+1];
+			
+			for (int i = 0; i < N-1; i++) {
+				for (int j = 0; j < N-1; j++) {
+					arr[i][j] = sc.nextInt();
+				}
+			}
+			
+			int sum = 0;
+			
+			// 아랫방향
+			for (int i = 0; i <= N - K; i++) {
+				for (int j = 0; j < N; j++) {
+					int flag = 1;
+					if (arr[i][j] == 1 && arr[i+K][j] == 0) {
+						for (int k = 1; k < K; k++) {
+							if (arr[i+k*1][j] != 1)
+								flag = 0;
+						}
+					}
+					if (flag == 1)
+						sum++;
+				}
+			}
+			
+			// 오른방향
+			for (int i = 0; i <= N; i++) {
+				for (int j = 0; j < N; j++) {
+					int flag = 1;
+					if (arr[i][j] == 1 && arr[i][j+K] == 0) {
+						for (int k = 1; k < K; k++) {
+							if (arr[i][j+k*1] != 1)
+								flag = 0;
+						}
+					}
+					if (flag == 1)
+						sum++;
+				}
+			}
+			
+			
+			System.out.println("#" + test_case + " " + sum);
+		}
+	}
+}
+

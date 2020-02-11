@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Solution {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		
+		for (int test_case = 1; test_case <= T; test_case++) {
+			int aHour = sc.nextInt();
+			int aMin = sc.nextInt();
+			int bHour = sc.nextInt();
+			int bMin = sc.nextInt();
+			
+			int a = aHour*60 + aMin;
+			int b = bHour*60 + bMin;
+			
+			int ans = a + b;
+			int hour = ans / 60;
+			int min = ans % 60;
+			if (hour > 12) {
+				hour = hour - 12;
+			}
+			System.out.println("#" + test_case + " " + hour + " " + min);
+		}
+	}
+}
+

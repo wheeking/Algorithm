@@ -31,20 +31,6 @@ public class B2206_벽부수고이동 {
 		if (visited[N-1][M-1][0] == 0 && visited[N-1][M-1][1] == 0) 
 			depMin = -1;
 		
-		for (int i = 0; i < visited.length; i++) {
-			for (int j = 0; j < visited[0].length; j++) {
-				System.out.print(visited[i][j][0] + " ");
-			}
-			System.out.println();
-		}
-		System.out.println();
-		for (int i = 0; i < visited.length; i++) {
-			for (int j = 0; j < visited[0].length; j++) {
-				System.out.print(visited[i][j][1] + " ");
-			}
-			System.out.println();
-		}
-		
 		System.out.println(depMin);
 		
 		
