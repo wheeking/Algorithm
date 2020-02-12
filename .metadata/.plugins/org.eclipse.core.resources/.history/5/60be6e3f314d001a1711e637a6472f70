@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class SWEA1873_상호의배틀필드 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		
+		for (int test_case = 1; test_case <= T; test_case++) {
+			int H = sc.nextInt();
+			int W = sc.nextInt();
+			char[][] map = new char[H][W];
+			
+			for (int i = 0; i < map.length; i++) {
+				String temp = sc.next();
+				for (int j = 0; j < map[i].length; j++) {
+					map[i][j] = temp.charAt(j);
+				}
+			}
+			
+			
+			
+			
+			
+			System.out.print("#" + test_case + " ");
+			for (int i = 0; i < map.length; i++) {
+				for (int j = 0; j < map.length; j++) {
+					System.out.print(map[i][j]);
+				}
+				System.out.println();
+			}
+		}
+	}
+}

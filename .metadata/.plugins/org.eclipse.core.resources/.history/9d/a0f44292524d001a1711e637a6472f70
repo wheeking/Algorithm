@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class SWEA1954_달팽이숫자 {
+	public static int cnt = 1;
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		
+		for (int test_case = 1; test_case <= 10; test_case++) {
+			int N = sc.nextInt();
+			int[][] map = new int[N][N];
+			
+			int order = 0;
+			for (int i = N; i > 0; i -= 2) {
+				fillNum(map, i, order++);
+			}
+			
+			System.out.println("#" + test_case);
+			for (int i = 0; i < map.length; i++) {
+				for (int j = 0; j < map.length; j++) {
+					System.out.print(map[i][j] + " ");
+				}
+				System.out.println();
+			}
+		}
+	}
+	
+	// 사각형 테두리 모양으로 수를 채움
+	public static void fillNum(int[][] map, int size, int order) {
+		// 윗변
+		for (int i = order; i =< size; i++) {
+			map[order][i] = cnt++;
+		}
+		// 오른쪽 변
+		for (int i = order+1; i < map.length-order; i++) {
+			map[i][map.length-1-order] = cnt++;
+		}
+		// 아랫변
+		for (int i = map.length-2-order; i >= order; i--) {
+			map[map.length-1-order][i] = cnt++;
+		}
+		// 왼쪽 변
+		for (int i = map.length-order-2; i > order; i--) {
+			map[i][order] = cnt++;
+		}
+	}
+}
