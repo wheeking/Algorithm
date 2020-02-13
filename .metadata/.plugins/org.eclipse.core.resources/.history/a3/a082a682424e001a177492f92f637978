@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Solution {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		for (int test_case = 1; test_case <= 10; test_case++) {
+			int N = sc.nextInt();
+			String str = sc.next();
+			
+			int ans = 0;
+			int top = -1;
+			char[] stack = new char[N];
+			
+			stack[++top] = str.charAt(0);
+			for (int i = 1; i < str.length(); i++) {
+				if (top >= 0) {
+					if (stack[top] == '{' && str.charAt(i) == '}')  
+						top--;
+					if (stack[top] == '[' && str.charAt(i) == ']')  
+						top--;
+					if (stack[top] == '(' && str.charAt(i) == ')')  
+						top--;
+					if (stack[top] == '<' && str.charAt(i) == '>')  
+						top--;
+				} else {
+					stack[++top] = str.charAt(i);
+				}
+			}
+			
+			System.out.println(top);
+			if (top == 0)
+				ans = 1;
+			
+			System.out.println("#" + test_case + " " + ans);
+		}
+	}
+}
+

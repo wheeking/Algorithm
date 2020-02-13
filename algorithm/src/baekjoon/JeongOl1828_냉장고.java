@@ -1,34 +1,56 @@
 package baekjoon;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class JeongOl1828_냉장고 {
 	public static void main(String[] args) {
-		ArrayList<Temp> list = new ArrayList<Temp>();
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
-		Temp[] tArr = new Temp[N];
+		int[] xArr = new int[N];
+		int[] yArr = new int[N];
+		int minX = 10000;
+		int maxY = 0;
 		
 		for (int i = 0; i < N; i++) {
-			tArr[i] = new Temp(sc.nextInt(), sc.nextInt());
+			int x = sc.nextInt();
+			int y = sc.nextInt();
+			
+			xArr[i] = x;
+			yArr[i] = y;
+			if (x < minX) 
+				minX = x;
+			if (y > maxY)
+				maxY = y;
 		}
 		
-		list.add(tArr[0]);
-		for (int i = 1; i < N; i++) {
-			// 전 페어의 최고온도보다 지금 페어의 최저온도가 높거나,
-			// 전 페어의 최저온도보다 지금 페어의 최고온도가 낮을때
-			
+		if (minX < 0)
+			minX *= -1;
+		
+		if (maxY < 0)
+			maxY *= -1;
+		
+		for (int i = 0; i < N; i++) {
+			xArr[i] += minX;
+			yArr[i] += minX;
 		}
-	}
-}
-
-class Temp {
-	int low;
-	int high;
-	
-	Temp(int low, int high) {
-		this.low = low;
-		this.high = high;
+		
+		int[] check = new int[minX + maxY + 1];
+		
+		for (int i = 0; i < N; i++) {
+			for (int j = xArr[i]; j <= yArr[i]; j++) {
+				if (check[j] == 2)
+					continue;
+				
+				check[j] += 1;
+			}
+		}
+		
+		int max = 0;
+		for (int i = 0; i < check.length; i++) {
+			if (check[i] > max)
+				max = check[i];
+		}
+		
+		System.out.println(max-1);
 	}
 }

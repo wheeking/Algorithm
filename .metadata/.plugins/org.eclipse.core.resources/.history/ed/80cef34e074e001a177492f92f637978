@@ -1,0 +1,66 @@
+package baekjoon;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class JeongOl1863_종교 {
+	public static int[] p;
+	public static int[] rank;
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int m = sc.nextInt();
+		int[] arr = new int[n+1];
+		p = new int[n+1];
+		rank = new int[p.length];
+		
+		for (int i = 0; i < p.length; i++) {
+			makeSet(i);
+		}
+		
+		for (int i = 0; i < m; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			
+			union(a, b);
+		}
+		
+		System.out.println(Arrays.toString(p));
+	}
+	
+	private static void union(int x, int y) {
+		int px = findSet(x);
+		int py = findSet(y);
+		
+		if (px != py) {
+			link(px, py);
+		}
+	}
+	
+	private static void link(int px, int py) {
+		if (rank[px] > rank[py]) {
+			p[py] = px;	// 작은쪽을 큰쪽에 붙인다.
+		} else {
+			p[px] = py;	// 같은 경우엔 y에 붙임.
+			if (rank[px] == rank[py]) { // 같은 경우에는 rank 값이 증가한다
+				rank[py]++;
+			}
+		}
+	}
+	
+	// 멤버 x를 포함하는 새로운 집합을 생성
+	private static void makeSet(int x) {
+		p[x] = x; // 부모를 자기 자산 index로 지정
+	}
+	
+	// 멤버 x를 포함하는 집합의 대표자 리턴
+	private static int findSet(int x) {
+		if (p[x] == x) {		// 대표가 스스로를 가리키면
+			return x;
+		} else {
+			p[x] = findSet(p[x]);	// Path Compression
+			return p[x];
+		}
+	}
+}

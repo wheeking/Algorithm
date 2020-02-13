@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class SWEA1494_사랑의카운슬러 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		
+		for (int test_case = 1; test_case <= T; test_case++) {
+			int N = sc.nextInt();
+			long ans = 0;
+			vPair[] vArr = new vPair[N];
+			vPair[] V = new vPair[N/2];
+			
+			for (int i = 0; i < N; i++) {
+				long x = sc.nextInt();
+				long y = sc.nextInt();
+				
+				vArr[i] = new vPair(x, y);
+			}
+			
+			for (int i = 1; i < N; i+=2) {
+				long vX = vArr[i].x - vArr[i-1].x;
+				long vY = vArr[i].y - vArr[i-1].y;
+				
+				V[i/2] = new vPair(vX, vY);
+			}
+			
+			long xSum = 0;
+			long ySum = 0;
+			for (int i = 0; i < V.length; i++) {
+				xSum += V[i].x;
+				ySum += V[i].y;
+			}
+			
+			ans = xSum*xSum + ySum*ySum;
+			
+			System.out.println("#" + test_case + " " + ans);
+		}
+	}	
+}
+
+class vPair {
+	long x;
+	long y;
+	
+	vPair(long x, long y) {
+		this.x = x;
+		this.y = y;
+	}
+}

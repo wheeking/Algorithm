@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+public class SWEA1258_행렬찾기 {
+	public static int[] dx = {1, -1, 0, 0};
+	public static int[] dy = {0, 0, 1, -1};
+	public static int[][] map;
+	public static int[][] visited;
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		
+		for (int test_case = 1; test_case <= T; test_case++) {
+			int N = sc.nextInt();
+			map = new int[N][N];
+			visited = new int[N][N];
+			
+			for (int i = 0; i < map.length; i++) {
+				for (int j = 0; j < map[i].length; j++) {
+					map[i][j] = sc.nextInt();
+				}
+			}
+			
+			for (int i = 0; i < map.length; i++) {
+				for (int j = 0; j < map[i].length; j++) {
+					if (visited[i][j] == 0 && map[i][j] != 0) {
+						System.out.println(i + " " + j);
+						Loc loc = new Loc(i, j);
+						dfs(loc);
+					}
+				}
+			}
+			
+
+			for (int i = 0; i < map.length; i++) {
+				for (int j = 0; j < map[i].length; j++) {
+					System.out.print(visited[i][j] + " ");
+				}
+				System.out.println();
+			}
+			
+			
+		}
+	}
+	
+	public static void dfs(Loc loc) {
+		int x = loc.x;
+		int y = loc.y;
+		
+		if (visited[x][y] == 1)
+			return;
+		
+		visited[x][y] = 1;
+		for (int k = 0; k < dx.length; k++) {
+			int newX = x + dx[k];
+			int newY = y + dy[k];
+			
+			if (newX >= 0 && newY >= 0 && newX < map.length && newY < map.length) {
+				if (visited[newX][newY] == 0 && map[newX][newY] != 0) {
+					visited[newX][newY] = 1;
+					dfs(new Loc(newX, newY));
+				}
+			}
+		}
+	}
+}
+
+class Loc {
+	int x;
+	int y;
+	
+	Loc(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+}
