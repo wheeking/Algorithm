@@ -55,7 +55,7 @@ public class SWEA1494_사랑의카운슬러 {
 			if (visited[i] == 0) {
 				visited[i] = 1;
 				dfs(i+1, cnt+1);
-				visited[i]=0;
+				visited[i] = 0;
 			}
 		}
 	}

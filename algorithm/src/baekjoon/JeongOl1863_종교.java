@@ -1,6 +1,5 @@
 package baekjoon;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class JeongOl1863_종교 {
@@ -38,9 +37,6 @@ public class JeongOl1863_종교 {
 				cnt++;
 			}
 		}
-//		
-//		System.out.println(Arrays.toString(p));
-		
 		System.out.println(cnt);
 	}
 	

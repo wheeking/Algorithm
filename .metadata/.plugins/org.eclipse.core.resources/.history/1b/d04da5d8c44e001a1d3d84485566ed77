@@ -1,0 +1,101 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class B17135_캐슬디펜스 {
+	public static int[][] map;
+	public static int[][][] visited;
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		int M = sc.nextInt();
+		int D = sc.nextInt();
+		map = new int[N+1][M];
+		visited = new int[N][M][3];
+		
+		for (int i = 0; i < map.length - 1; i++) {
+			for (int j = 0; j < map[i].length; j++) {
+				map[i][j] = sc.nextInt();
+			}
+		}
+		
+		move();
+		
+		System.out.println(checkMap(map));
+		
+//		for (int i = 0; i < map.length; i++) {
+//			for (int j = 0; j < map[i].length; j++) {
+//				System.out.print(map[i][j] + " ");
+//			}
+//			System.out.println();
+//		}
+		
+		
+		
+		// 궁수의 위치는 (N, xx), 조합 수 MC3
+		
+	}	// end of main
+	
+	public static void dfs(int p, int cnt) {
+		if (cnt == 3)	{	// 종료 조건. 궁수 세명
+			// 궁수 배치 후에 할 일.
+			while (true) {
+				if (checkMap(map) == 1)
+					break;
+			}
+		}
+		
+		// 수행
+		for (int i = p; i < map[0].length; i++) {
+			if (visited[map.length][i][0] == 0) {
+				visited[map.length][i][0] = 1;
+				dfs(i+1, cnt+1);
+				visited[map.length][i][0] = 0;
+			}
+		}
+	}
+	
+	// 게임 끝나면(모두 0) 1 리턴
+	public static int checkMap(int[][] map) {
+		int flag = 1;
+		int bflag = 1;
+		for (int i = 0; i < map.length; i++) {
+			for (int j = 0; j < map[i].length; j++) {
+				if (map[i][j] == 1) {
+					flag = 0;
+					bflag = 0;
+					break;
+				}
+			}
+			if (bflag == 0)
+				break;
+		}
+		
+		if (flag == 0)
+			return 0;
+		else
+			return 1;
+	}
+	// 적 이동
+	public static void move() {
+		for (int i = map.length-2; i > 0; i--) {
+			for (int j = 0; j < map[i].length; j++) {
+				map[i][j] = map[i-1][j];
+			}
+		}
+		
+		for (int i = 0; i < map[0].length; i++) {
+			map[0][i] = 0;
+		}
+		
+	}
+	
+	public static int measure(int x1, int y1, int x2, int y2) {
+		int distance = Math.abs(x1-x2) + Math.abs(y2-y1);
+		
+		return distance;
+	}
+}
+
+
