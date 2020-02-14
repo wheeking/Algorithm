@@ -12,10 +12,8 @@ public class Solution {
 			
 			for (int i = 0; i < N; i++) {
 				int command = sc.nextInt();
-				if (command == 0) {
-					distance += nowSpeed*1;
+				if (command == 0)
 					continue;
-				}
 				int speed = sc.nextInt();
 				
 				if (command == 1) {

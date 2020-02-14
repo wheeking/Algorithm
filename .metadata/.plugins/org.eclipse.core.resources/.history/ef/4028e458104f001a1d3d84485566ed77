@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class JeongOl1828_냉장고 {
-	// start, end
 	public static class Chemical implements Comparable<Chemical> {
 		int s;
 		int e;
@@ -41,14 +40,14 @@ public class JeongOl1828_냉장고 {
 		int count = 1;
 		Chemical c = cArr[0]; // 초기값 저장
 		
-		// 앞의 범위를 벗어나는지  계속 확인
 		for (int i = 1; i < cArr.length; i++) {
 			if (cArr[i].s > c.e) {
-				count++;
 				c = cArr[i];
+				count++;
 			}
 		}
 		
 		System.out.println(count);
+
 	}
 }
