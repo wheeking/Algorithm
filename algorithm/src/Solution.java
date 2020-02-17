@@ -29,8 +29,6 @@ public class Solution {
 				distance += nowSpeed*1;
 			}
 			
-			
-				
 			System.out.println("#" + test_case + " " + distance);
 		}
 	}

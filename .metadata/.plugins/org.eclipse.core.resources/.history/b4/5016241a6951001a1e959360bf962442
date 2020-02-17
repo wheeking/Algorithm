@@ -1,0 +1,41 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class SWEA6719_성수의프로그래밍강좌시청 {
+	public static int[] nArr;
+	public static int[] tArr;
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		
+		for (int test_case = 1; test_case <= T; test_case++) {
+			double ans = 0;
+			// N C K 조합
+			int N = sc.nextInt();
+			int K = sc.nextInt();
+			nArr = new int[N];	// 강좌 어레이
+			tArr = new int[K];	// 선택강좌 어레이
+			
+			for (int i = 0; i < N; i++) {
+				nArr[i] = sc.nextInt();
+			}
+			comb(N, K);
+			
+			
+			System.out.println("#" + test_case + " " + ans);
+		}
+	}
+	
+	public static void comb(int N, int K) {
+		if (K == 0) {		// tArr 경우마다 완성 시 할 일.
+			System.out.println(Arrays.toString(tArr));
+		} else if (N < K) {
+			return;
+		} else {
+			tArr[K-1] = nArr[N-1];
+			comb(N-1, K-1);
+			//comb(N-1, K);
+		}
+	}
+}

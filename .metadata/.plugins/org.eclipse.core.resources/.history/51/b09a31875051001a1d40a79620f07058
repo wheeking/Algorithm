@@ -1,0 +1,102 @@
+package baekjoon;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class B1600_말이되고픈원숭이 {
+	public static int[][] map;
+	public static int[][][] d;
+	public static int dMin = Integer.MAX_VALUE;
+	public static int[] dx = {1, -1, 0, 0};
+	public static int[] dy = {0, 0, 1, -1};
+	public static int[] hx = {-1, -2, -2, -1, 1, 2, 2, 1};
+	public static int[] hy = {-2, -1, 1, 2, 2, 1, -1, -2};
+	public static int K;		// 원숭이처럼 이동 가능 횟수
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		K = sc.nextInt();
+		int W = sc.nextInt();
+		int H = sc.nextInt();
+		map = new int[H][W];
+		d = new int[H][W][K+1];	// 0번지는 옆 이동, 1부터는 K번 말처럼 이동한 횟수대로 따로 저장 
+		
+		for (int i = 0; i < H; i++) {
+			for (int j = 0; j < W; j++) {
+				map[i][j] = sc.nextInt();
+			}
+		}
+		
+		bfs(new hInfo(0, 0, 0, 0));
+		
+		int flag = 1;
+		for (int i = 0; i < K; i++) {
+			if (d[H-1][W-1][i] != 0)
+				flag = 0;
+			System.out.println(d[H-1][W-1][i]);
+		}
+		if (flag == 0)
+			dMin = -1;
+		
+		
+		System.out.println(dMin);
+	} // end of main
+	
+	public static void bfs(hInfo h) {
+		Queue<hInfo> q = new LinkedList<hInfo>();
+		q.offer(h);
+		d[0][0][0] = 1;
+		
+		while(!q.isEmpty()) {
+			hInfo temp = q.poll();
+			// 정답 최소값 체크
+			if (temp.x == map.length-1 && temp.y == map[0].length-1) {
+				System.out.println("도착");
+				if (d[temp.x][temp.y][temp.cnt] < dMin) {
+					dMin = d[temp.x][temp.y][temp.cnt];
+					d[map.length-1][map[0].length-1][temp.cnt] = dMin; 
+				}
+			}
+			
+			// 그냥 한칸 이동할 떄
+			for (int k = 0; k < dx.length; k++) {
+				int newX = temp.x + dx[k];
+				int newY = temp.y + dy[k];
+				if (newX >= 0 && newY >= 0 && newX < map.length && newY < map.length) {
+					if (map[newX][newY] == 0 && d[newX][newY][temp.hcnt] == 0) {
+						d[newX][newY][temp.hcnt] = 1;	// 한칸 이동 temp.hcnt 는 0임.
+						q.offer(new hInfo(newX, newY, temp.hcnt, temp.cnt+1));
+					}
+				}
+			}
+			
+			// 말처럼 이동할 때
+			for (int k = 0; k < hx.length; k++) {
+				int newX = temp.x + hx[k];
+				int newY = temp.y + hy[k];
+				
+				if (newX >= 0 && newY >= 0 && newX < map.length && newY < map.length && temp.hcnt <= K) {
+					if (map[newX][newY] == 0 && d[newX][newY][temp.hcnt] == 0) {
+						d[newX][newY][temp.hcnt] = 1;
+						q.offer(new hInfo(newX, newY, temp.hcnt+1, temp.cnt+1));
+					}
+				}
+			}
+		}
+	}
+}
+
+class hInfo {
+	int x;
+	int y;
+	int hcnt;   // 말처럼 이동한 횟수
+	int cnt;	
+	
+	hInfo(int x, int y, int hcnt, int cnt) {
+		this.x = x;
+		this.y = y;
+		this.hcnt = hcnt;
+		this.cnt = cnt;
+	}
+}
