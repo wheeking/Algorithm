@@ -12,29 +12,31 @@ public class B1600_말이되고픈원숭이 {
 	public static int[] dy = {0, 0, 1, -1};
 	public static int[] hx = {-1, -2, -2, -1, 1, 2, 2, 1};
 	public static int[] hy = {-2, -1, 1, 2, 2, 1, -1, -2};
+	public static int K;		// 원숭이처럼 이동 가능 횟수
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int K = sc.nextInt();
+		K = sc.nextInt();
 		int W = sc.nextInt();
 		int H = sc.nextInt();
 		map = new int[H][W];
-		d = new int[H][W][K+1];	// 0번지는 옆 이동, 1부터는 K번 말처럼 이동한 횟수대로 따로 저장 
+		d = new int[H][W][K+1];	// 0번지는 옆 이동, 1부터는 말처럼 이동한 횟수만큼에서 방문체크
 		
 		for (int i = 0; i < H; i++) {
 			for (int j = 0; j < W; j++) {
-				map[H][W] = sc.nextInt();
+				map[i][j] = sc.nextInt();
 			}
 		}
 		
-		bfs(new hInfo(0, 0, 0));
+		bfs(new hInfo(0, 0, 0, 0));
 		
-		int flag = 1;
-		for (int i = 0; i < K; i++) {
-			if (d[H-1][W-1][i] != 0)
-				flag = 0;
+		int count = 0;
+		for (int i = 0; i <= K; i++) {
+			if (d[H-1][W-1][i] == 0)
+				count++;
+			//System.out.println(d[H-1][W-1][i]);
 		}
-		if (flag == 0)
+		if (count == K+1)
 			dMin = -1;
 		
 		System.out.println(dMin);
@@ -49,12 +51,36 @@ public class B1600_말이되고픈원숭이 {
 			hInfo temp = q.poll();
 			// 정답 최소값 체크
 			if (temp.x == map.length-1 && temp.y == map[0].length-1) {
-				if (d[temp.x][temp.y][temp.cnt] < dMin) {
-					dMin = d[temp.x][temp.y][temp.cnt];
+				if (temp.cnt < dMin) {
+					dMin = temp.cnt;
 				}
 			}
 			
+			// 그냥 한칸 이동할 떄
+			for (int k = 0; k < dx.length; k++) {
+				int newX = temp.x + dx[k];
+				int newY = temp.y + dy[k];
+				if (newX >= 0 && newY >= 0 && newX < map.length && newY < map[0].length) {
+					if (map[newX][newY] == 0 && d[newX][newY][temp.hcnt] == 0) {
+						d[newX][newY][temp.hcnt] = 1;	// 한칸 이동 temp.hcnt 는 0임.
+						q.offer(new hInfo(newX, newY, temp.hcnt, temp.cnt+1));
+					}
+				}
+			}
 			
+			// 말처럼 이동할 때
+			for (int k = 0; k < hx.length; k++) {
+				int newX = temp.x + hx[k];
+				int newY = temp.y + hy[k];
+				
+				if (newX >= 0 && newY >= 0 && newX < map.length && newY < map[0].length && temp.hcnt < K) {
+					// 다음 갈 곳의 방문 여부를 판단할 때는 지금 상태의 hcnt에서 한번더 뛴상태를 체크해야하므로 hcnt+1을 비교해준다
+					if (map[newX][newY] == 0 && d[newX][newY][temp.hcnt+1] == 0) {
+						d[newX][newY][temp.hcnt+1] = 1;
+						q.offer(new hInfo(newX, newY, temp.hcnt+1, temp.cnt+1));
+					}
+				}
+			}
 		}
 	}
 }
@@ -62,11 +88,13 @@ public class B1600_말이되고픈원숭이 {
 class hInfo {
 	int x;
 	int y;
-	int cnt;	// 말처럼 이동한 횟수
+	int hcnt;   // 말처럼 이동한 횟수
+	int cnt;	// 총 이동 횟수
 	
-	hInfo(int x, int y, int cnt) {
+	hInfo(int x, int y, int hcnt, int cnt) {
 		this.x = x;
 		this.y = y;
+		this.hcnt = hcnt;
 		this.cnt = cnt;
 	}
 }
