@@ -6,10 +6,8 @@ public class Solution {
 		int T = sc.nextInt();
 		
 		for (int test_case = 1; test_case <= T; test_case++) {
-			int N = sc.nextInt();
-			int distance = 0;
-			int nowSpeed = 0;
 			
+<<<<<<< HEAD
 			for (int i = 0; i < N; i++) {
 				int command = sc.nextInt();
 				if (command == 0) {
@@ -30,6 +28,9 @@ public class Solution {
 			}
 			
 			System.out.println("#" + test_case + " " + distance);
+=======
+			System.out.println("#" + test_case + " ");
+>>>>>>> 087c295236f9a84fb2d063c47554fcc39f920c47
 		}
 	}
 }
