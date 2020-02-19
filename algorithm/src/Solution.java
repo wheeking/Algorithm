@@ -6,7 +6,12 @@ public class Solution {
 		int T = sc.nextInt();
 		
 		for (int test_case = 1; test_case <= T; test_case++) {
+<<<<<<< HEAD
 		
+=======
+
+	
+>>>>>>> 303723e5d7610097fe28d020c2b1026c1860baca
 			System.out.println("#" + test_case + " ");
 		}
 	}
